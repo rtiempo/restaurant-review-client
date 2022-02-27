@@ -7,13 +7,13 @@ import {
   Typography,
 } from '@mui/material';
 
-const Restaurant = () => {
+const Restaurant = ({ restaurant }) => {
   return (
     <Card sx={{ minWidth: 250 }}>
       <CardContent>
-        <Typography variant='h5'>Riviera Caterer</Typography>
-        <Typography variant='subtitle1'>American</Typography>
-        <Typography variant='subtitle2'>Brooklyn</Typography>
+        <Typography variant='h5'>{restaurant.name}</Typography>
+        <Typography variant='subtitle1'>{restaurant.cuisine}</Typography>
+        <Typography variant='subtitle2'>{restaurant.borough}</Typography>
       </CardContent>
       <CardActions>
         <Button size='small'>Write a Review</Button>
