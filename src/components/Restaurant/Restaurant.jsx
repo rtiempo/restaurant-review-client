@@ -9,7 +9,7 @@ import {
 
 const Restaurant = () => {
   return (
-    <Card sx={{ minWidth: 258, maxWidth: 328 }}>
+    <Card sx={{ minWidth: 250 }}>
       <CardContent>
         <Typography variant='h5'>Riviera Caterer</Typography>
         <Typography variant='subtitle1'>American</Typography>
