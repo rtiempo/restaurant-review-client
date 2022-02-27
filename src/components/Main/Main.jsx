@@ -1,7 +1,12 @@
 import React from 'react';
+import { Restaurant } from '..';
 
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <>
+      <Restaurant />
+    </>
+  );
 };
 
 export default Main;
