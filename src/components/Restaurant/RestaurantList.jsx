@@ -14,6 +14,7 @@ const RestaurantList = () => {
     RestaurantDataService.getAll()
       .then((response) => {
         console.log(response.data);
+        console.log(process.env.REACT_APP_BASE_URL);
         setRestaurants(response.data.restaurants);
       })
       .catch((e) => {
