@@ -23,12 +23,7 @@ const RestaurantList = () => {
 
   return (
     <>
-      <Grid
-        container
-        spacing={2}
-        justifyContent='flex-start'
-        alignItems='center'
-      >
+      <Grid container spacing={2} justifyContent='flex-start'>
         {restaurants.map((restaurant) => {
           return (
             <Grid item key={restaurant._id} sm={12} md={6} lg={3} xl={2}>
